@@ -1,6 +1,2 @@
-Thanks for downloading this template!
-
-Template Name: FlexStart
-Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+This is my freelance web development website. I built this with
+HTML5, CSS3, and JavaScript
