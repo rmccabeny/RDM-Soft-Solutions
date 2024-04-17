@@ -76,6 +76,10 @@ section {
   }
 }
 
+.about img {
+  padding: 2em;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -600,6 +604,10 @@ section {
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
+.values {
+  background-color: #717ff5;
+}
+
 .values .box {
   padding: 30px;
   box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
@@ -674,6 +682,7 @@ section {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
   height: 100%;
+  background-color: aqua;
 }
 
 .features .feature-box h3 {
@@ -794,13 +803,16 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .service-box {
+
+
+.service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
   padding: 60px 30px;
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+  background-color: #2db6fa;
 }
 
 .services .service-box .icon {
@@ -949,6 +961,10 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+.pricing-background {
+  background-color: aqua;
+}
+
 .pricing .box {
   padding: 40px 20px;
   background: #fff;
@@ -1048,12 +1064,14 @@ section {
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
+
+
 .faq .accordion-collapse {
   border: 0;
 }
 
 .faq .accordion-button {
-  padding: 15px 15px 20px 0;
+  padding: 15px 15px 15px 0;
   font-weight: 600;
   border: 0;
   font-size: 18px;
@@ -1072,7 +1090,7 @@ section {
 }
 
 .faq .accordion-body {
-  padding: 0 0 25px 0;
+  padding: 0 0 15px 0;
   border: 0;
 }
 
