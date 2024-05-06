@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Send email (example using PHP's built-in mail function)
-    $to = "your_email@example.com";
+    $to = "rdmsoftwaresolutions62@gmail.com";
     $headers = "From: $name <$email>" . "\r\n";
     $headers .= "Reply-To: $email" . "\r\n";
     $mailSent = mail($to, $subject, $message, $headers);
