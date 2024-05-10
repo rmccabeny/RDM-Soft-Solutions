@@ -26,7 +26,7 @@
 
  
   $contact->smtp = array(
-    'host' => 'rdmsoftwaresolutionsny.com',
+    'host' => 'http://www.rdmsoftwaresolutionsny.com',
     'username' => 'rdmsoftware',
     'password' => 'Code1023!',
     'port' => '587'
