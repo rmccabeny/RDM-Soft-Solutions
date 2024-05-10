@@ -1605,6 +1605,7 @@ section {
   color: #444444;
   background: #fafbff;
   padding: 30px;
+  max-width: fit-content;
 }
 
 .contact .info-box i {
