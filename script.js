@@ -27,14 +27,18 @@
                 })
                 .then(data => {
                     if (data.error) {
-                        displayError(form, data.error);
+                        errorMesssage.textContent = 'There was a problem with the request.';
                     } else {
-                        displaySuccess(form);
+                        sentMessage.textContent = 'Your message has been sent. Thank you!';
+                        form.reset();
                     }
                 })
                 .catch(error => {
-                    displayError(form, error.message);
-                });
+                    errorMessage.textContent = 'There was a problem with the request.';
+                })
+                .finally(() => {
+                    form.removeChild(loadingMessage);
+                })
         });
     });
 
