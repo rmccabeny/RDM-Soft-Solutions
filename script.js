@@ -34,7 +34,7 @@
                     }
                 })
                 .catch(error => {
-                    errorMessage.textContent = 'There was a problem with the request.';
+                    error - Message.textContent = 'There was a problem with the request.';
                 })
                 .finally(() => {
                     form.removeChild(loadingMessage);
@@ -42,18 +42,6 @@
         });
     });
 
-    function displayError(form, message) {
-        form.querySelector('.loading').classList.remove('hidden');
-        form.querySelector('.error-message').innerHTML = message;
-        form.querySelector('.error-message').classList.add('hidden');
-        form.querySelector('.sent-message').classList.remove('hidden');
-    }
 
-    function displaySuccess(form) {
-        form.querySelector('.loading').classList.remove('hidden');
-        form.querySelector('.error-message').classList.remove('hidden');
-        form.querySelector('.sent-message').classList.add('hidden');
-        form.reset();
-    }
 
 })();
