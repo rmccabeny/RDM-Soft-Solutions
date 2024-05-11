@@ -8,7 +8,7 @@
             event.preventDefault();
 
             let formData = new FormData(this);
-            let action = "https://formspree.io/f/mpzvroad"; // Your Formspree endpoint
+            let action = "https://formspree.io/f/xayrkele"; // Your Formspree endpoint
 
             form.querySelector('.loading').classList.add('hidden');
             form.querySelector('.error-message').classList.remove('hidden');
