@@ -27,21 +27,29 @@
                 })
                 .then(data => {
                     if (data.error) {
-                        errorMesssage.textContent = 'There was a problem with the request.';
+                        displayError(form, data.error);
                     } else {
-                        sentMessage.textContent = 'Your message has been sent. Thank you!';
-                        form.reset();
+                        displaySuccess(form);
                     }
                 })
                 .catch(error => {
-                    errorMessage.textContent = 'There was a problem with the request.';
-                })
-                .finally(() => {
-                    form.removeChild(loadingMessage);
-                })
+                    displayError(form, error.message);
+                });
         });
     });
 
+    function displayError(form, message) {
+        form.querySelector('.loading').classList.remove('hidden');
+        form.querySelector('.error-message').innerHTML = message;
+        form.querySelector('.error-message').classList.add('hidden');
+        form.querySelector('.sent-message').classList.remove('hidden');
+    }
 
+    function displaySuccess(form) {
+        form.querySelector('.loading').classList.remove('hidden');
+        form.querySelector('.error-message').classList.remove('hidden');
+        form.querySelector('.sent-message').classList.add('hidden');
+        form.reset();
+    }
 
 })();
