@@ -34,7 +34,7 @@
                     }
                 })
                 .catch(error => {
-                    error - Message.textContent = 'There was a problem with the request.';
+                    errorMessage.textContent = 'There was a problem with the request.';
                 })
                 .finally(() => {
                     form.removeChild(loadingMessage);
