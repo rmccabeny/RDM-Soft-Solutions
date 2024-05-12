@@ -362,6 +362,12 @@ section {
   }
 }
 
+@media (max-width: 768) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+}
+
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -423,13 +429,11 @@ section {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
-@media (max-width: 768) {
-  .navbar-mobile .dropdown ul li {
-    min-width: 200px;
-  }
 
-
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
 }
+
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
