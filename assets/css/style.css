@@ -360,9 +360,6 @@ section {
   .mobile-nav-toggle {
     display: block;
   }
-
-
-
 }
 
 .navbar-mobile {
@@ -426,8 +423,12 @@ section {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
+@media (max-width: 768) {
+  .navbar-mobile .dropdown ul li {
+    min-width: 200px;
+  }
+
+
 }
 
 .navbar-mobile .dropdown ul a {
@@ -447,6 +448,8 @@ section {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+
+
 
 /*--------------------------------------------------------------
 # Hero Section
