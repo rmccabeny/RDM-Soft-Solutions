@@ -348,7 +348,6 @@ section {
   color: #012970;
   font-size: 28px;
   cursor: pointer;
-  display: none;
   line-height: 0;
   transition: 0.5s;
 }
@@ -362,9 +361,8 @@ section {
     display: block;
   }
 
-  .navbar ul {
-    display: none;
-  }
+
+
 }
 
 .navbar-mobile {
